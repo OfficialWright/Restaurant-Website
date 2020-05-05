@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Capstone Website</title>
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/menu.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+    </head>
+    <body>
+        <script type="text/babel" src="scripts/index.js"></script>
+        <img class = "Border-left"   src = "media/Border left.png">
+        <img class = "Border-right"   src = "media/Border right.png">
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+        <div id="header"></div>
+        <center>
+        <div id="content">
+            <img src = "media/Appetizers.png">
+            <div style="overflow: auto;"><span class="left"><h2>Italian 6”Pizza <mark>$6.99</mark></h2>
+            <p>Fresh house-made pizza d ough and tomato sauce, fresh mozzarella and provolone cheeses,basil, mushrooms</p></span>
+            <span class="right"><h2>Caprese Salad <mark>$6.99</mark></h2>
+            <p>Mozzarella cheese, tomato, fresh basil drizzled with balsamic reduction and extra virgin olive oil</p></span></div>
+            
+            <div style="overflow: auto;"><span class="left"><h2>Bruschetta <mark>$5.99</mark></h2>
+            <p>Marinated tomatoes, shallots, garlic, fresh basil with lemon aioli spread on toasted Italian bread</p></span>
+            <span class="right"><h2>Braciole Calabresi <mark>$7.99</mark></h2>
+            <p>Braised pork filled with pecorino cheese and Italian herbs served with classic fresh tomato sauce</p></span></div>
+            
+            <img src = "media/Soups.png">
+            <div style="overflow: auto;"><span class="left"><h2>Italian Wedding Soup <mark>$5.99</mark></h2>
+            <p>House-made lean ground beef meatballs combined with breadcrumbs, eggs, parmesan, freshchopped basil simmered in chicken broth and spinach</p></span>
+            <span class="right"><h2>Italian Minestrone Soup <mark>$5.99</mark></h2>
+            <p>Fresh spinach, carrots, celery, tomatoes, green beans, northern beans, kidney beans, zucchini, fresh basil, bay leaves, parmesan and pasta simmered in vegetable stock</p></span></div>
+            
+            <div style="overflow: auto;"><span class="center"><h2>Italian Fish Soup <mark>$5.99</mark></h2>
+            <p>Halibut chunks, fennel, onions, garlic, tomatoes, vegetable stock simmered with Italian herbs</p></span></div>
+            
+            <img src = "media/Salads.png">
+            <div style="overflow: auto;"><span class="left"><h2>Italian Antipasto Salad <mark>$6.99</mark></h2>
+            <p>Romaine lettuce, roasted chicken strips, fusilli pasta, provolone cheese strips, green and black olives, grated asiago cheese</p></span>
+            <span class="right"><h2>Italian Spinanch and Berry Salad <mark>$6.99</mark></h2>
+            <p>Spinach, iceberg lettuce, arugula, strawberries, blueberries, mandarin oranges, candied walnuts</p></span></div>
+            
+            <img src = "media/Sides.png">
+            <div style="overflow: auto;"><span class="left"><h2>Italian Style Sauteed Spinanch <mark>$5.99</mark></h2>
+            <p>Sautéed spinach, onions,garlic,roma tomatoes, red pepper flakes, Italian seasonings, topped with grated parmesan</p></span>
+            <span class="right"><h2>House made Pasta with Classic Tomato Sauce <mark>$5.99</mark></h2>
+            <p>Tomato sauce simmered for hours with garlic and fresh Italian herbs</p></span></div>
+            
+            <div style="overflow: auto;"><span class="left"><h2>Italian Baked Zucchini <mark>$5.99</mark></h2>
+            <p>Parmesan bread crumbtopping add crunch to this dish</p></span>
+            <span class="right"><h2>Italian Style Green Beans <mark>$5.99</mark></h2>
+            <p>Steamed fresh green beans, grape tomatoes, Italian herbs and parmesan</p></span></div>
+            
+            <div style="overflow: auto;"><span class="center"><h2>Roasted Cauliflower <mark>$5.99</mark></h2>
+            <p>Drizzled with olive oil, garlic,Italian herbblendand parmesan</p></span></div>
+            
+            <img src = "media/Entress.png">
+            <div style="overflow: auto;"><span class="left"><h2>Italian Metaloaf with Classic Tomato Sauce <mark>$8.99</mark></h2>
+            <p>Baked local ground beef, ground pork, eggs, red peppers, onions, bread crumbs, parmesan cheese, fresh basil, garlic and Italian seasonings</p></span>
+            <span class="right"><h2>Penne Pecorino <mark>$7.99</mark></h2>
+            <p>Extra virgin olive oil, fresh garlic, Italian herbs over fresh penne pastatopped with pecorino cheese</p></span></div>
+            
+            <div style="overflow: auto;"><span class="left"><h2>Polpette Di Pane (No Meat Bread Balls) <mark>$8.99</mark></h2>
+            <p>Served with pasta and choice of meat sauce or classic tomatosauce</p></span>
+            <span class="right"><h2>Osso Bucco (Braised Veal Shanks) <mark>$12.99</mark></h2>
+            <p>Cured ham slices and mozzarella slices are rolled up in slightly fried eggplant and baked with crumbled ricotta. Served with our house-made classic tomato sauce</p></span></div>
+            
+            <div style="overflow: auto;"><span class="left"><h2>Vegatable Lasagna <mark>$8.99</mark></h2>
+            <p>Chunkyclassic tomatosauce (with or without meat). Baked lasagna noodles, spinach, zucchini, mozzarella, parmesan, ricotta, eggs, Italian herbstopped with extra chunky marinarasauce</p></span>
+            <span class="right"><h2>Arancini (Italaian Rice Croquettes Metaless) <mark>$8.99</mark></h2>
+            <p>Crispy risotto balls filled with parmesan,mozzarella cheese,Italian herbsand breadcrumbs with sundried tomatoes and basil. Served with delicious classic tomato sauce</p></span></div>
+            
+            <div style="overflow: auto;"><span class="center"><h2>Melanzane (Eggplant Roll) <mark>$10.99</mark></h2>
+            <p>Cured ham slices and mozzarella slices are rolled up in slightly fried eggplant and baked with crumbled ricotta. Served with our house-made classic tomato sauce</p></span></div>
+            
+            <img src = "media/Desserts.png">
+            <div style="overflow: auto;"><span class="left"><h2>Sicilian Cannoli(2) <mark>$3.99</mark></h2>
+            <p>Fried cannoli crispy shells filled with creamy mascarponeand ricotta cheese filling with mini chocolate chips</p></span>
+            <span class="right"><h2>Balsamic Zabaglione <mark>$3.99</mark></h2>
+            <p>Custard-like dessert with fresh berries,vanilla whipped cream</p></span></div>
+            
+            <div style="overflow: auto;"><span class="left"><h2>Torta Caprese Slice <mark>$3.99</mark></h2>
+            <p>Chocolate cake dusted with powdered sugar</p></span>
+            <span class="right"><h2>Italian Wedding Cake <mark>$3.99</mark></h2>
+            <p>Baked drop cookies with sprinkles</p></span></div>
+            
+            <img src = "media/Beverages.png">
+            <div style="overflow: auto;"><span class="left"><h2>Coffee <mark>$2.99</mark></h2>
+            <p>Nescafe caffeinated or decaffeinated</p></span>
+            <span class="right"><h2>Cappuccino <mark>$3.99</mark></h2>
+            <p>Equal parts espresso, steamed milk, and foamed milk</p></span></div>
+
+            <div style="overflow: auto;"><span class="center"><h2>Caffe Latte <mark>$3.99</mark></h2>
+            <p>Espresso with more steamed milk and less foam</p></span></div>
+            
+            <div style="overflow: auto;"><span class="center"><h2>Teas <mark>$3.99</mark></h2></span></div>
+            
+            <div style="overflow: auto;"><span class="left"><h3>Caffeinated Teas</h3>
+            <p>Light green tea</p>
+            <p>Black tea</p>
+            <p>Orange rind and sweet spice</p></span>
+            <span class="right"><h3>Decaffeinated Teas</h3>
+            <p>herbal cranberry apple</p>
+            <p>English teatime</p></span></div>
+            
+            <div style="overflow: auto;"><span class="left"><h2>Juices</h2>
+            <p>Fresh squeezed orange juice <mark>$3.99</mark></p>
+            <p>Motts apple juice <mark>$3.99</mark></p></span>
+            <span class="right"><h2>Milk</h2>
+            <p>Whole milk or 2% milk <mark>$3.99</mark></p>
+            <p>Chocolate milk or almond milk <mark>$3.99</mark></p></span></div>
+            
+            <div style="overflow: auto;"><span class="center"><h2>Fountain Drinks <mark>$3.99</mark></h2></span></div>
+            <div style="overflow: auto;"><span class="left"><p>Coke</p></span>
+            <span class="right"><p>Diet coke</p></span></div>
+            <div style="overflow: auto;"><span class="left"><p>Sprite</p></span>
+            <span class="right"><p>Cherry coke</p></span></div>
+        </div>
+        </center>
+        <div id="footer"></div>
+    </body>
+</html>

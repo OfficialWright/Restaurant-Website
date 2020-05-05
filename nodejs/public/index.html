@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Capstone Website</title>
+        <link rel="stylesheet" href="styles/base.css" />
+        <link rel="stylesheet" href="styles/home.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.1.5/index.min.js"></script>
+    </head>
+    <body>
+        <script type="text/babel" src="scripts/index.js"></script>
+        <img class = "Border-left"   src = "media/Border left.png">
+        <img class = "Border-right"   src = "media/Border right.png">
+        <script>
+            $(function(){
+                $("#header").load("header.html");
+                $("#footer").load("footer.html");
+            });
+        </script>
+        <div id="header"></div>
+        <center>
+        <div id="content">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                <img style="border-radius: 25px;" src="media/Slideshow-1.png" style="width:75%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img style="border-radius: 25px;" src="media/Slideshow-2.png" style="width:75%">
+                </div>
+            
+                <div class="mySlides fade">
+                <img style="border-radius: 25px;" src="media/Slideshow-3.png" style="width:75%">
+                </div>
+
+                <div class="mySlides fade">
+                <img style="border-radius: 25px;" src="media/Slideshow-4.png" style="width:75%">
+                </div>
+
+                <div class="mySlides fade">
+                <img style="border-radius: 25px;" src="media/Slideshow-5.png" style="width:75%">
+                </div>
+
+                <div class="mySlides fade">
+                <img style="border-radius: 25px;" src="media/Slideshow-6.png" style="width:75%">
+                </div>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br><br>
+            <div id="about">
+                <img src = "media/About us.png">
+                <p style="width: 33%; font-size: 21pt;">Grandma Greens is family owned and run restaurant, we were established in 2019 . Our in-house chef’s come in bright and early to prepare our freshly baked breads and pastry’s; we work with local produce and fish companies to try and provide the freshest items in the market. 
+                    The love of wines and quality food is our top priority here at Grandma Green’s.</p>
+                <br><br>
+                <img src = "media/Image 1.png">
+                <img src = "media/Image 3.png">
+                <img src = "media/Image 2.png">
+            </div>
+            <br><br>
+            <div style="overflow: auto;" id="contact">
+            <img src = "media/Contact.png">
+            <br><br>
+            <div class="left">
+                <img src = "media/Map.png">
+            </div>
+            <div class="right">
+                <p style="font-size: 19pt;">73 East Bridge Drive Greenville, SC 29503<img src = "media/Location icon.png"></p>
+                <p style="font-size: 19pt;">Grandmagreens@gmail.com<img src = "media/Email icon.png"></p>
+                <p style="font-size: 19pt;">843-254-9582<img src = "media/Phone icon.png"></p>
+            </div>
+            </div>
+            <br><br><br>
+            <img src = "media/Hours.png">
+            <br><br>
+            <img src = "media/Hours time.png">
+            <br><br>
+        </div>
+        </center>
+        <div id="footer"></div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>

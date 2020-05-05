@@ -1,0 +1,58 @@
+.Border-left{
+    float: left;
+    height: 4025px;
+    width: 300px;
+    background-position: left;
+}
+
+.Border-right{
+    float: right;
+    height: 4025px;
+    width: 300px;
+    background-position: right;
+}
+
+.left {
+    float: left;
+    width: 475px;
+    padding-left: 5%;
+}
+
+.right {
+    float: right;
+    width: 475px;
+    padding-right: 5%;
+}
+
+p {
+    width: 50%;
+}
+
+mark {
+    background-color: transparent;
+    color: #932D1F;
+}
+
+@media only screen and (max-width: 1310px) {
+    .Border-left{
+        display: none;
+    }
+
+    .Border-right{
+        display: none;
+    }
+
+    .left {
+        float: none;
+        padding: 5px;
+    }
+
+    .right {
+        float: none;
+        padding: 5px;
+    }
+
+    p {
+        width: 90%;
+    }
+}
