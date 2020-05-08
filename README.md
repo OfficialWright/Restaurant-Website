@@ -25,3 +25,6 @@ Does not include database login information, but does include SQL dump. (All dat
 
 ### Schedule
 <img src="media/schedule.gif">
+
+## Entity-Relationship Diagram
+<img src="media/Database_ERD.png">
